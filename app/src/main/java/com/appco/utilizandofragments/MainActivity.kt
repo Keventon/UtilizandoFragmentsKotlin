@@ -26,12 +26,10 @@ class MainActivity : AppCompatActivity() {
                     "email" to "kevertonguimaraes19@gmail.com"
                 )
                 conversasFragment.arguments = bundle
-
                 supportFragmentManager
                     .beginTransaction()
                     .replace(R.id.fragmentContainerView, conversasFragment)
                     .commit()
-
                 supportFragmentManager.commit {
                     replace<ConversasFragment>(R.id.fragmentContainerView, args = bundle)
                 }
