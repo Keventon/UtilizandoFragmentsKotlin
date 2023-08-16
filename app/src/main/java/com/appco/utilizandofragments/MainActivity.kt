@@ -20,9 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         with(binding) {
             buttonConversas.setOnClickListener {
-
                 val conversasFragment = ConversasFragment()
-
                 val bundle = bundleOf(
                     "nome" to "Keventon Rian",
                     "email" to "kevertonguimaraes19@gmail.com"
